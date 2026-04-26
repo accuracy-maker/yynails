@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yynails — Nail salon · Sydney</title>
+    <meta
+      name="description"
+      content="yynails — manicures, gel, and nail art in Sydney. Book your appointment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="logo" href="#">yynails</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#showcase">Showcase</a>
+          <a href="#services">Services</a>
+          <a href="#gift">Gift cards</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a class="link-quiet" href="#contact">Sydney</a>
+          <button class="btn btn-primary" data-open-booking type="button">Book now</button>
+          <button
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span class="sr-only">Open menu</span>
+            <span class="menu-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-nav" class="mobile-nav" hidden>
+        <a href="#showcase">Showcase</a>
+        <a href="#services">Services</a>
+        <a href="#gift">Gift cards</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-primary btn-block" data-open-booking type="button">Book now</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section
+        class="hero-scene"
+        id="hero-scene"
+        aria-label="yynails welcome"
+      >
+        <div class="hero-scene__media">
+          <img
+            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&amp;fit=crop&amp;w=2400&amp;q=85"
+            srcset="
+              https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w,
+              https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&amp;fit=crop&amp;w=1800&amp;q=85 1800w,
+              https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&amp;fit=crop&amp;w=2400&amp;q=85 2400w
+            "
+            sizes="100vw"
+            width="2400"
+            height="1600"
+            alt="Close-up of hands with colourful gel nail art"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero-scene__veil" aria-hidden="true"></div>
+        <div class="hero-scene__frame" aria-hidden="true"></div>
+        <div class="container hero-scene__content">
+          <p class="hero-scene__suite">Maison de beauté · Sydney</p>
+          <h1 class="hero-scene__title">
+            Bringing fashion
+            <span class="hero-scene__title-italic">to your fingertips.</span>
+          </h1>
+          <p class="hero-scene__lede">
+            Manicures, gel, and nail art — precise shaping, spotless prep, and
+            colour that feels très Sydney.
+          </p>
+          <div class="hero-scene__ctas">
+            <button class="btn btn-hero-solid" data-open-booking type="button">Book an appointment</button>
+            <a class="btn btn-hero-outline" href="#showcase">View the salon</a>
+          </div>
+        </div>
+        <a class="hero-scene__scroll" href="#showcase" aria-label="Scroll to showcase">
+          <span class="hero-scene__scroll-line" aria-hidden="true"></span>
+          <span class="hero-scene__scroll-label">Découvrir</span>
+        </a>
+      </section>
+
+      <section class="section showcase" id="showcase">
+        <header class="showcase-heading">
+          <h2>Gallery</h2>
+        </header>
+        <div class="showcase-gallery" aria-label="Nail design gallery carousel">
+          <button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Previous gallery image">
+            <span aria-hidden="true">&#10094;</span>
+          </button>
+          <div class="gallery-viewport" id="gallery-viewport">
+            <div class="gallery-track">
+              <figure class="gallery-slide">
+                <img src="assets/gallery/sc1.jpg" alt="Nude almond manicure with colourful French tips" loading="lazy" />
+              </figure>
+              <figure class="gallery-slide">
+                <img src="assets/gallery/sc2.jpg" alt="Blue short square manicure with line art" loading="lazy" />
+              </figure>
+              <figure class="gallery-slide">
+                <img src="assets/gallery/sc3.jpg" alt="Natural pink set with blue abstract details" loading="lazy" />
+              </figure>
+            </div>
+          </div>
+          <button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Next gallery image">
+            <span aria-hidden="true">&#10095;</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Price List</p>
+            <h2>YYNAILS Service Pricing</h2>
+            <p class="section-sub">
+              Final quote may vary based on design complexity.
+              <span class="cn-sub">最终价格会根据款式复杂度调整。</span>
+            </p>
+          </header>
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Simple Design on Natural Nails + Structure</h3>
+              <p class="service-meta">$45</p>
+              <p>
+                Clean prep and structured finish for a simple look.
+                <span class="cn-sub">简单款式本甲 + 建构。</span>
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Simple Extension Design + Structure</h3>
+              <p class="service-meta">$65</p>
+              <p>
+                Nail extension with structure for simple styles.
+                <span class="cn-sub">简单款式延长 + 建构。</span>
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Complex Design Add-on</h3>
+              <p class="service-meta">$10+</p>
+              <p>
+                Additional charge based on design difficulty.
+                <span class="cn-sub">复杂款式加收 $10 起。</span>
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Removal</h3>
+              <p class="service-meta">$10</p>
+              <p>
+                Please let us know in advance if removal is needed.
+                <span class="cn-sub">卸甲 $10，需提前告知。</span>
+              </p>
+            </article>
+          </div>
+          <div class="service-notes" aria-label="Product and availability notes">
+            <p>
+              Our base gel uses Mating products; cat-eye gel uses Huajiaozhang products.
+              <span class="cn-sub">套胶使用末町，猫眼胶使用花校长。</span>
+            </p>
+            <p>
+              Other products are selected from trusted premium brands for quality and safety.
+              <span class="cn-sub">其他产品均为大牌产品，可放心质量与安全问题。</span>
+            </p>
+            <p class="service-availability">
+              Availability: Wednesday, Friday, Saturday, Sunday
+              <span class="cn-sub">可预约时间：周三、周五、周六、周日。</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="reviews">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">They’re talking</p>
+            <h2>Love from Sydney.</h2>
+          </header>
+          <div class="quote-grid">
+            <blockquote class="quote-card">
+              <p>
+                “Super detailed gel work and the space feels calm — not loud.
+                My set lasted three weeks without chips.”
+              </p>
+              <footer>— Marlene E.</footer>
+            </blockquote>
+            <blockquote class="quote-card">
+              <p>
+                “We have tried salons all over the inner west and yynails is the
+                one we keep booking.”
+              </p>
+              <footer>— Lia K.</footer>
+            </blockquote>
+            <blockquote class="quote-card">
+              <p>
+                “Spotless stations, friendly team, and they actually listen when
+                you describe the shape you want.”
+              </p>
+              <footer>— Anita D.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust">
+        <div class="container trust-inner">
+          <h2 class="trust-title">Care you can feel.</h2>
+          <ul class="trust-list">
+            <li>Single-use files and buffers where required</li>
+            <li>Hospital-grade disinfectant between guests</li>
+            <li>Ventilation and spacing designed for comfort</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="gift">
+        <div class="container gift-banner">
+          <div>
+            <p class="eyebrow">Gift cards</p>
+            <h2>Share a little Sydney glow.</h2>
+            <p>Digital or in-studio gift cards — mock link for now.</p>
+          </div>
+          <a class="btn btn-secondary" href="#contact">Ask about gift cards</a>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="book">
+        <div class="container book-grid">
+          <div>
+            <p class="eyebrow eyebrow-on-dark">Visit</p>
+            <h2>Book your next set.</h2>
+            <p class="on-dark-muted">
+              Call, email, or use our mock booking link. We will swap in your
+              real scheduler when you are ready.
+            </p>
+            <a class="btn btn-primary btn-large" href="tel:+61481917479">Call 0481 917 479</a>
+          </div>
+          <div class="book-card">
+            <h3 id="contact">Hours &amp; contact</h3>
+            <dl class="contact-dl">
+              <dt>Hours</dt>
+              <dd>Daily 9:00–21:00</dd>
+              <dt>Availability</dt>
+              <dd>
+                Wednesday · Friday · Saturday · Sunday
+                <span class="cn-sub">周三、周五、周六、周日</span>
+              </dd>
+              <dt>Phone</dt>
+              <dd><a href="tel:+61481917479">0481 917 479</a></dd>
+              <dt>Email</dt>
+              <dd><a href="mailto:yvonne161020@gmail.com">yvonne161020@gmail.com</a></dd>
+              <dt>Studio</dt>
+              <dd>7 Paddock Street, Lidcombe NSW 2141</dd>
+              <dt>Follow</dt>
+              <dd>
+                <div class="social-links" aria-label="Social profiles">
+                  <a
+                    class="social-link"
+                    href="https://www.instagram.com/yynails_syd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram: yynails_syd"
+                    title="Instagram: yynails_syd"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                      <circle cx="12" cy="12" r="4"></circle>
+                      <circle cx="17.5" cy="6.5" r="1.2"></circle>
+                    </svg>
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    class="social-link"
+                    href="https://www.xiaohongshu.com/user/profile/YYnails_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Xiaohongshu: YYnails_"
+                    title="Xiaohongshu: YYnails_"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M5 6.5h3.5l1.3 1.9 1.3-1.9H19v11H5z"></path>
+                      <path d="M8.2 12h1.5l1 1.6 1-1.6h1.5"></path>
+                    </svg>
+                    <span>Xiaohongshu</span>
+                  </a>
+                </div>
+              </dd>
+            </dl>
+            <a class="btn btn-ghost-light btn-block" href="https://maps.google.com/?q=7+Paddock+Street,+Lidcombe+NSW+2141" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section policies" id="policies">
+        <div class="container policies-inner">
+          <h2>Booking Notice</h2>
+          <p class="cn-sub">预约须知 💕</p>
+
+          <h3>Time &amp; Appointment</h3>
+          <ul class="policy-list">
+            <li>
+              Natural nail single color takes around 1.5h+; extension sets take around 2h+;
+              removal needs an extra 30 minutes.
+              <span class="cn-sub">本甲单色 1.5h+，延长 2h+，卸甲 +30min。</span>
+            </li>
+            <li>
+              Please book in advance. Deposit is $20 or ¥100 (effective from 26.05).
+              If you are 15 minutes late, the deposit is non-refundable.
+              <span class="cn-sub">请提前预约，押金 $20/¥100（从 26.05 起），迟到 15min 押金不退。</span>
+            </li>
+          </ul>
+
+          <h3>Design Policy</h3>
+          <ul class="policy-list">
+            <li>
+              All designs include prep and structure.
+              <span class="cn-sub">所有款式包含前置处理 + 建构。</span>
+            </li>
+            <li>
+              We will do our best to match reference photos.
+              If a 90%+ match is not possible, we will discuss it with you in WeChat first.
+              <span class="cn-sub">会尽力还原图片款式，不能 90% 以上还原的部分会提前微信沟通。</span>
+            </li>
+            <li>
+              Design cannot be changed after curing under the lamp.
+              <span class="cn-sub">照完灯后不可更改款式。</span>
+            </li>
+          </ul>
+
+          <h3>Payment Methods</h3>
+          <ul class="policy-list">
+            <li>
+              AUD cash, bank transfer, or CNY WeChat Pay.
+              <span class="cn-sub">澳币现金 / 转账 / 人民币微信支付。</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a class="logo logo-footer" href="#">yynails</a>
+            <p class="footer-tag">Nail salon · Sydney</p>
+            <div class="social-links footer-social" aria-label="Social profiles">
+              <a
+                class="social-link"
+                href="https://www.instagram.com/yynails_syd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram: yynails_syd"
+                title="Instagram: yynails_syd"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="17.5" cy="6.5" r="1.2"></circle>
+                </svg>
+                <span>Instagram</span>
+              </a>
+              <a
+                class="social-link"
+                href="https://www.xiaohongshu.com/user/profile/YYnails_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Xiaohongshu: YYnails_"
+                title="Xiaohongshu: YYnails_"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M5 6.5h3.5l1.3 1.9 1.3-1.9H19v11H5z"></path>
+                  <path d="M8.2 12h1.5l1 1.6 1-1.6h1.5"></path>
+                </svg>
+                <span>Xiaohongshu</span>
+              </a>
+            </div>
+          </div>
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="#showcase">Showcase</a>
+            <a href="#services">Services</a>
+            <a href="#gift">Gift cards</a>
+            <a href="#policies">Policies</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <p class="footer-copy">© <span id="year"></span> yynails. Mock content for preview.</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="bk-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="bk-modal-title">
+      <div class="bk-backdrop" data-bk-close></div>
+      <div class="bk-panel" tabindex="-1">
+        <button class="bk-close" data-bk-close aria-label="Close booking">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M1 1l14 14M15 1L1 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <div class="bk-steps" aria-hidden="true">
+          <span class="bk-step is-active" data-step="1">Service</span>
+          <span class="bk-step-sep">›</span>
+          <span class="bk-step" data-step="2">Date</span>
+          <span class="bk-step-sep">›</span>
+          <span class="bk-step" data-step="3">Time</span>
+          <span class="bk-step-sep">›</span>
+          <span class="bk-step" data-step="4">Details</span>
+        </div>
+
+        <!-- Step 1: Service -->
+        <div class="bk-pane" id="bk-pane-1">
+          <h2 class="bk-heading" id="bk-modal-title">Choose your service</h2>
+          <div class="bk-service-list">
+            <button class="bk-service-btn" data-service="Simple Design on Natural Nails" data-duration="90" type="button">
+              <span class="bk-service-name">Simple Design on Natural Nails</span>
+              <span class="bk-service-meta">$45 · ~1.5 hrs</span>
+            </button>
+            <button class="bk-service-btn" data-service="Simple Extension Design" data-duration="120" type="button">
+              <span class="bk-service-name">Simple Extension Design</span>
+              <span class="bk-service-meta">$65 · ~2 hrs</span>
+            </button>
+            <button class="bk-service-btn" data-service="Complex Design Add-on" data-duration="120" type="button">
+              <span class="bk-service-name">Complex Design Add-on</span>
+              <span class="bk-service-meta">$10+ · add to a service</span>
+            </button>
+            <button class="bk-service-btn" data-service="Removal" data-duration="30" type="button">
+              <span class="bk-service-name">Removal</span>
+              <span class="bk-service-meta">$10 · ~30 min</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Date -->
+        <div class="bk-pane" id="bk-pane-2" hidden>
+          <h2 class="bk-heading">Choose a date</h2>
+          <p class="bk-hint">Available: Wed · Fri · Sat · Sun</p>
+          <div class="bk-cal" id="bk-cal"></div>
+          <div class="bk-actions">
+            <button class="btn btn-ghost" data-bk-back="1" type="button">Back</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Time -->
+        <div class="bk-pane" id="bk-pane-3" hidden>
+          <h2 class="bk-heading">Choose a time</h2>
+          <p class="bk-hint" id="bk-date-label"></p>
+          <div id="bk-slots"></div>
+          <div class="bk-actions">
+            <button class="btn btn-ghost" data-bk-back="2" type="button">Back</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Details -->
+        <div class="bk-pane" id="bk-pane-4" hidden>
+          <h2 class="bk-heading">Your details</h2>
+          <div class="bk-summary" id="bk-summary"></div>
+          <form class="bk-form" id="bk-form" novalidate>
+            <div class="bk-field">
+              <label for="bk-name">Name <span aria-hidden="true">*</span></label>
+              <input id="bk-name" type="text" name="name" required autocomplete="name" placeholder="Your full name" />
+            </div>
+            <div class="bk-field">
+              <label for="bk-phone">Phone <span aria-hidden="true">*</span></label>
+              <input id="bk-phone" type="tel" name="phone" required autocomplete="tel" placeholder="0400 000 000" />
+            </div>
+            <div class="bk-field">
+              <label for="bk-email">Email <span aria-hidden="true">*</span></label>
+              <input id="bk-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+            </div>
+            <div class="bk-field">
+              <label for="bk-notes">Notes <span class="bk-optional">(optional)</span></label>
+              <textarea id="bk-notes" name="notes" rows="3" placeholder="Reference photo link, special requests…"></textarea>
+            </div>
+            <div class="bk-form-actions">
+              <button type="button" class="btn btn-ghost" data-bk-back="3">Back</button>
+              <button type="submit" class="btn btn-primary">Confirm booking</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Step 5: Confirmed -->
+        <div class="bk-pane bk-pane--confirm" id="bk-pane-5" hidden>
+          <div class="bk-confirm-icon" aria-hidden="true">✓</div>
+          <h2 class="bk-heading">Request sent!</h2>
+          <p class="bk-confirm-detail" id="bk-confirm-detail"></p>
+          <p class="bk-hint">We'll review your request and send you a confirmation email and calendar invite shortly.</p>
+          <button class="btn btn-primary" id="bk-done" type="button">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
